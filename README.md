@@ -5,3 +5,5 @@ Due to opal's need to have a copy of "opal.js" on the page, and because the code
 To install, simply open chrome://extensions and drag and drop the .crx file onto the page.
 
 This tool was directly inspired by, and much of the code lifted from: [The CoffeeConsole](https://chrome.google.com/webstore/detail/coffeeconsole/ladbkfdlnaibelfidknofapbbdlhadfp).
+
+![](screenshot.png)
