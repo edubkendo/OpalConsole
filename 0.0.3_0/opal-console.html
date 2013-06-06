@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #cc-editor {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 50%;
+            left: 0;
+            z-index: 1;
+            /*background-color:#EEE;*/
+            font-style: Monaco, Menlo, monospace;
+            font-size: 10pt;
+        }
+        #cc-results {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            z-index: 1;
+            font-style: Monaco, Menlo, monospace;
+            font-size: 10pt;
+        }
+        #runcc {
+            position: fixed;
+            right: 10px;
+            bottom: 5px;
+            z-index: 3;
+        }
+        #error {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            padding: 8px 60px 8px 15px;
+            background-color: #DDD;
+            color: #900;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .8em;
+            text-align: right;
+            z-index: 2;
+            opacity: .8;
+            -webkit-transition: opacity .2s linear;
+        }
+
+        #error.is-hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <pre id="cc-editor">puts "Hello!"</pre>
+
+    <pre id="cc-results"></pre>
+
+    <div id="error"></div>
+    <button id="runcc">Run</button>
+
+    <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="ace/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+    <script src="opal-console.js"></script>
+    <script src="opal/opal.js"></script>
+    <script src="opal/opal-parser.js"></script>
+    <script src="jquery.js"></script>
+    <script src="update-console.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
