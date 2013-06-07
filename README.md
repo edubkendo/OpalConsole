@@ -1,6 +1,4 @@
-Run an Opal Console from the Chrome DevTools. View the compiled Javascript (and if the page contains a copy of "opal.js", execute it).
-
-Due to opal's need to have a copy of "opal.js" on the page, and because the code is eval'd in the context of the page currently being inspected, I haven't been able to figure out how to make this execute on any random page. However, there is a simple workaround. Before using the OpalConsole, simply copypaste a copy of opal.js into the regular console, then everything will work. Or use it to debug and tinker with your web app's already using Opal. For a quick copy of opal.js, minified, grab it from [CDNJS](http://cdnjs.cloudflare.com/ajax/libs/opal/0.3.43/opal.min.js).
+Run an Opal Console from the Chrome DevTools. View the compiled Javascript and execute it. We inject a copy of Opal.js into the page to make this work. However, it is injected prior to any other script, so if you already have Opal on the page, your Opal should replace ours.
 
 To install, simply open chrome://extensions and drag and drop the .crx file onto the page.
 
